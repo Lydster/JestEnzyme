@@ -1,2 +1,2 @@
 # JestEnzyme
-Udemy course for testing in Jest and Enzyme
+Practice testing in Jest and Enzyme
