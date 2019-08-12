@@ -7,8 +7,13 @@ class Counter extends React.Component {
   render() {
     return (
       <div data-test="component-counter">
-        <h1 data-test="counter-display">count goes here</h1>
-        <button data-test="increment-button">+</button>
+        <h1 data-test="counter-display">{this.state.counter}</h1>
+        <button
+          data-test="increment-button"
+          onClick={() => this.setState({ counter: this.state.counter + 1 })}
+        >
+          +
+        </button>
       </div>
     );
   }
